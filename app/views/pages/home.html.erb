@@ -1,0 +1,149 @@
+<body>
+  <nav class="nav-extended grey darken-2">
+    <div class="nav-background">
+      <div class="pattern active" style="background-image: url('http://i.imgur.com/7Il5O29.png');"></div>
+    </div>
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo"><a href="index.html" class="brand-logo"><%= image_tag("UEFA.png", :alt => "rss feed") %></a></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "My Slideshows", root_path %></li>
+        <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Bill Hewitt<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <!-- Dropdown Structure -->
+      <ul id='feature-dropdown' class='dropdown-content'>
+        <li><%= link_to "My Account", pages_myaccount_path %></li>
+        <li><a href="horizontal.html">Logout</a></li>
+      </ul>
+
+      <div class="nav-header center">
+        <h1>MY SLIDESHOWS</h1>
+        <div class="tagline"><i class="fa ellipses-h"></i></div>
+      </div>
+    </div>
+
+    <!-- Fixed Masonry Filters -->
+
+    <div class="container">
+      <div class="nav-content">
+          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  </nav>
+  <ul class="side-nav" id="nav-mobile">
+    <li class="active"><a href="index.html"><i class="material-icons">camera</i>My Slideshows</a></li>
+    <li><a href="full-header.html"><i class="material-icons">fullscreen</i>My Account</a></li>
+    <li><a href="horizontal.html"><i class="material-icons">swap_horiz</i>Logout</a></li>
+  </ul>
+
+  <!-- End Navigation -->
+
+  <!-- Start Background -->
+
+
+  <div id="portfolio" class="section gray fullpage">
+      <div class="container">
+        <br>
+
+                <div class="row">
+                  <div class="col s12 m6 l4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img class="responsive-img activator" src="http://placehold.it/400x300" alt="placeholder">
+                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light grey darken-2"><i class="material-icons">launch</i></a>
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title">#GIGGSHOUR</span>
+                        <p>142 posts since Feb 27, 2017</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#" class="teal-text text-teal">Edit Slideshow</a>
+                        <a class="grey-text text-grey" href="#modal1">Delete</a>
+                      </div>
+                    </div><!-- End Card -->
+                  </div><!-- End Col -->
+
+
+                  <div class="col s12 m6 l4">
+                    <div class="card">
+                      <div class="card-image">
+                        <img class="responsive-img activator" src="http://placehold.it/400x300" alt="placeholder">
+                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light grey darken-2"><i class="material-icons">launch</i></a>
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title">#UELMEMORIES</span>
+                        <p>142 posts since Feb 27, 2017</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#" class="teal-text text-teal">Edit Slideshow</a>
+                        <a class="grey-text text-grey" href="#modal2">Delete</a>
+                      </div>
+                    </div><!-- End Card -->
+                  </div><!-- End Col -->
+
+                </div><!-- End Row -->
+
+            
+
+                <!-- Modal Structure 1 -->
+                <div class="col s12 m6 l4">
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Delete Slideshow</h4>
+                      <p>Are you sure you want to delete <b>#GIGGSHOUR</b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Delete</a>
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal Structure 2 -->
+                <div class="col s12 m6 l4">
+                  <div id="modal2" class="modal">
+                    <div class="modal-content">
+                      <h4>Delete Slideshow</h4>
+                      <p>Are you sure you want to delete <b>#UELMEMORIES</b></p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Delete</a>
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+      </div><!-- End Container -->
+  </div><!-- End Section gray -->
+
+
+
+
+
+
+</body><!-- Close Body -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   $(".button-collapse").sideNav();
+
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>

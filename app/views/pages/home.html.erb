@@ -4,10 +4,10 @@
       <div class="pattern active" style="background-image: url('http://i.imgur.com/7Il5O29.png');"></div>
     </div>
     <div class="nav-wrapper container">
-      <div class="brand-logo"><%= link_to root_path do %>
-   <%= image_tag "UEFA.png", class: "brand-logo" %>
-<% end %></a>
-</div>
+      <%= link_to root_path do %>
+        <%= image_tag "UEFA.png", class: "brand-logo" %>
+      <% end %>
+    </div>
 
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -82,7 +82,7 @@
                         <p>142 posts since Feb 27, 2017</p>
                       </div>
                       <div class="card-action">
-                        <a href="#" class="blue-text text-blue">Edit Slideshow</a>
+                        <%= link_to "Edit Slideshow", pages_edit_path, class: "blue-text text-blue" %>
                         <a class="grey-text text-grey" href="#modal1">Delete</a>
                       </div>
                     </div><!-- End Card -->

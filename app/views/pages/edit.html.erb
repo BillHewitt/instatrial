@@ -1,0 +1,198 @@
+<body>
+  <nav class="nav-extended grey darken-3">
+    <div class="nav-background">
+      <div class="pattern active" style="background-image: url('http://i.imgur.com/7Il5O29.png');"></div>
+    </div>
+    <div class="nav-wrapper container">
+      <%= link_to root_path do %>
+        <%= image_tag "UEFA.png", class: "brand-logo" %>
+      <% end %>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "My Slideshows", root_path %></li>
+        <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Bill Hewitt<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <!-- Dropdown Structure -->
+      <ul id='feature-dropdown' class='dropdown-content'>
+        <li><%= link_to "My Account", pages_myaccount_path %></li>
+        <li><a href="horizontal.html">Logout</a></li>
+      </ul>
+
+      <div class="nav-header center">
+        <h1>#GIGGSHOUR</h1>
+        <div class="tagline"><i class="fa ellipses-h"></i></div>
+      </div>
+    </div>
+
+    <!-- Fixed Masonry Filters -->
+
+    <div class="nav-content grey darken-4">
+      <div class="container">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a class="active" href="#test1">Moderate</a></li>
+          <li class="tab"><a href="#test2">Settings</a></li>
+        </ul>
+    </div>
+    </nav>
+
+  </nav>
+  <ul class="side-nav" id="nav-mobile">
+    <li><%= link_to root_path, id: "logo" do %>
+        <i class="material-icons">theaters</i>
+        My Slideshows
+        <% end %>
+    </li>
+    <li><%= link_to pages_myaccount_path, id: "logo" do %>
+        <i class="material-icons">perm_identity</i>
+        My Account
+        <% end %>
+    </li>
+    <li><%= link_to root_path, id: "logo" do %>
+        <i class="material-icons">settings_power</i>
+        Logout
+        <% end %>
+    </li>
+  </ul>
+
+  <!-- End Navigation -->
+
+  <!-- Start Background -->
+
+   <div id="portfolio" class="section gray fullpage">
+      <div class="container">
+
+        <div id="test1" class="col s12"><!-- Start Profile tab -->
+          <br>
+
+            <div class="row">
+              <div class="col s12 m4 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://placehold.it/400x300">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Visible On Slideshow</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://placehold.it/400x300">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Visible On Slideshow</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://placehold.it/400x300">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Visible On Slideshow</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://placehold.it/400x300">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Hidden From Slideshow</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://placehold.it/400x300">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Visible On Slideshow</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m4 l4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="http://placehold.it/400x300">
+                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Hidden From Slideshow</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+
+        </div><!-- End Profile tab -->
+        <div id="test2" class="col s12"><!-- Start Password tab -->
+
+        <br>
+
+          <div class="row">
+            <div class="input-field col s12 m12 l6">
+              <input value="************" id="first_name2" type="text" class="validate">
+              <label class="active" for="first_name2">Current Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 m12 l6">
+              <input placeholder="" ="New Password" id="first_name2" type="text" class="validate">
+              <label class="active" for="first_name2">New Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 m12 l6">
+              <input placeholder="" ="Repeat New Password" id="first_name2" type="text" class="validate">
+              <label class="active" for="first_name2">Repeat New Password</label>
+            </div>
+          </div>
+
+          <div class="row button">
+            <div class="input-field col s12 m12 l6">
+              <div class="right">
+                <a class="waves-effect waves-light btn blue">Save</a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div><!-- End Password tab -->
+      
+
+      </div>
+    </div>
+
+
+
+  <script type="text/javascript">
+   $(".button-collapse").sideNav();
+
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>

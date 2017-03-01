@@ -28,9 +28,21 @@
 
   </nav>
   <ul class="side-nav" id="nav-mobile">
-    <li class="active"><a href="index.html"><i class="material-icons">camera</i>My Slideshows</a></li>
-    <li><a href="full-header.html"><i class="material-icons">fullscreen</i>My Account</a></li>
-    <li><a href="horizontal.html"><i class="material-icons">swap_horiz</i>Logout</a></li>
+    <li><%= link_to root_path, id: "logo" do %>
+        <i class="material-icons">theaters</i>
+        My Slideshows
+        <% end %>
+    </li>
+    <li><%= link_to pages_myaccount_path, id: "logo" do %>
+        <i class="material-icons">perm_identity</i>
+        My Account
+        <% end %>
+    </li>
+    <li><%= link_to root_path, id: "logo" do %>
+        <i class="material-icons">settings_power</i>
+        Logout
+        <% end %>
+    </li>
   </ul>
 
   <!-- End Navigation -->

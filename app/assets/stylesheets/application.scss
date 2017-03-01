@@ -16,6 +16,10 @@ div.picker__weekday-display {
   @extend .blue;
 }
 
+.picker__close, .picker__today {
+  @extend .blue-text;
+}
+
 
 .dropdown-content li > a, .dropdown-content li > span {
     @extend .grey-text, .text-darken-4;

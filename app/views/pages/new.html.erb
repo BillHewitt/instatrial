@@ -3,7 +3,9 @@
       <div class="pattern active" style="background-image: url('http://i.imgur.com/7Il5O29.png');"></div>
     </div>
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo"><a href="index.html" class="brand-logo"><%= image_tag("UEFA.png", :alt => "rss feed") %></a></a>
+       <%= link_to root_path do %>
+        <%= image_tag "UEFA.png", class: "brand-logo" %>
+      <% end %>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><%= link_to "My Slideshows", root_path %></li>

@@ -10,7 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require materialize
 //= require masonry/jquery.masonry
 //= require jquery
-//= require materialize
+
 

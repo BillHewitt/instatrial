@@ -20,6 +20,10 @@ div.picker__weekday-display {
   @extend .blue-text;
 }
 
+img.brand-logo {
+  padding-top: 20px;
+}
+
 
 .dropdown-content li > a, .dropdown-content li > span {
     @extend .grey-text, .text-darken-4;

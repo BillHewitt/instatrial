@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Instagramwall</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    'application', media: 'all',: 'reload' %>
+    <%= javascript_include_tag 'application',: 'reload' %>
   </head>
 
   <body>
     <%= yield %>
   </body>
 </html>
+

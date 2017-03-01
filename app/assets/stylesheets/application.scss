@@ -8,6 +8,19 @@
 // Sass Variables.
 $gallery-gutter: 15%;
 
+div.picker__date-display {
+  @extend .blue;
+}
+
+div.picker__weekday-display {
+  @extend .blue;
+}
+
+
+.dropdown-content li > a, .dropdown-content li > span {
+    @extend .grey-text, .text-darken-4;
+  }
+
 html,
 body {
   height: 100%;
@@ -16,6 +29,10 @@ body {
 body {
   background-color: #f4f4f4;
   font-family: "Lato", sans-serif;
+}
+
+div.row.button {
+  margin-top: -20px;
 }
 
 ul {

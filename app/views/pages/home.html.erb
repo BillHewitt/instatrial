@@ -1,5 +1,5 @@
 <body>
-  <nav class="nav-extended grey darken-2">
+  <nav class="nav-extended grey darken-3">
     <div class="nav-background">
       <div class="pattern active" style="background-image: url('http://i.imgur.com/7Il5O29.png');"></div>
     </div>
@@ -17,7 +17,7 @@
       </ul>
 
       <div class="nav-header center">
-        <h1>MY SLIDESHOWS</h1>
+        <h1>My Slideshows</h1>
         <div class="tagline"><i class="fa ellipses-h"></i></div>
       </div>
     </div>
@@ -26,9 +26,13 @@
 
     <div class="container">
       <div class="nav-content">
-          <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+          <a class="btn-floating btn tooltipped btn-large halfway-fab waves-effect waves-light blue" data-position="top" data-delay="50" data-tooltip="Create new slideshow">
             <i class="material-icons">add</i>
           </a>
+
+          <%= link_to pages_new_path, class: "btn-floating btn-large halfway-fab waves-effect waves-light blue" do %>
+    <i class="material-icons">add</i>
+<% end %>
         </div>
       </div>
     </nav>
@@ -54,14 +58,14 @@
                     <div class="card">
                       <div class="card-image">
                         <img class="responsive-img activator" src="http://placehold.it/400x300" alt="placeholder">
-                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light grey darken-2"><i class="material-icons">launch</i></a>
+                        <a class="btn-floating btn-large btn tooltipped halfway-fab waves-effect waves-light grey darken-2" data-position="top" data-delay="50" data-tooltip="Launch Slideshow"><i class="material-icons">launch</i></a>
                       </div>
                       <div class="card-content">
                         <span class="card-title">#GIGGSHOUR</span>
                         <p>142 posts since Feb 27, 2017</p>
                       </div>
                       <div class="card-action">
-                        <a href="#" class="teal-text text-teal">Edit Slideshow</a>
+                        <a href="#" class="blue-text text-blue">Edit Slideshow</a>
                         <a class="grey-text text-grey" href="#modal1">Delete</a>
                       </div>
                     </div><!-- End Card -->
@@ -72,14 +76,14 @@
                     <div class="card">
                       <div class="card-image">
                         <img class="responsive-img activator" src="http://placehold.it/400x300" alt="placeholder">
-                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light grey darken-2"><i class="material-icons">launch</i></a>
+                        <a class="btn-floating btn-large btn tooltipped halfway-fab waves-effect waves-light grey darken-2" data-position="top" data-delay="50" data-tooltip="Launch Slideshow"><i class="material-icons">launch</i></a>
                       </div>
                       <div class="card-content">
                         <span class="card-title">#UELMEMORIES</span>
                         <p>142 posts since Feb 27, 2017</p>
                       </div>
                       <div class="card-action">
-                        <a href="#" class="teal-text text-teal">Edit Slideshow</a>
+                        <a href="#" class="blue-text text-blue">Edit Slideshow</a>
                         <a class="grey-text text-grey" href="#modal2">Delete</a>
                       </div>
                     </div><!-- End Card -->
@@ -94,7 +98,7 @@
                   <div id="modal1" class="modal">
                     <div class="modal-content">
                       <h4>Delete Slideshow</h4>
-                      <p>Are you sure you want to delete <b>#GIGGSHOUR</b></p>
+                      <p>Are you sure you want to delete <b>#GIGGSHOUR</b>?</p>
                     </div>
                     <div class="modal-footer">
                       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Delete</a>
@@ -108,7 +112,7 @@
                   <div id="modal2" class="modal">
                     <div class="modal-content">
                       <h4>Delete Slideshow</h4>
-                      <p>Are you sure you want to delete <b>#UELMEMORIES</b></p>
+                      <p>Are you sure you want to delete <b>#UELMEMORIES</b>?</p>
                     </div>
                     <div class="modal-footer">
                       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Delete</a>
@@ -145,5 +149,9 @@
     $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
+  });
+
+      $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
   });
 </script>

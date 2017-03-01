@@ -1,0 +1,69 @@
+<nav class="nav-extended grey darken-3">
+    <div class="nav-background">
+      <div class="pattern active" style="background-image: url('http://i.imgur.com/7Il5O29.png');"></div>
+    </div>
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo"><a href="index.html" class="brand-logo"><%= image_tag("UEFA.png", :alt => "rss feed") %></a></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "My Slideshows", root_path %></li>
+        <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Bill Hewitt<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <!-- Dropdown Structure -->
+      <ul id='feature-dropdown' class='dropdown-content'>
+        <li><%= link_to "My Account", pages_myaccount_path %></li>
+        <li><a href="horizontal.html">Logout</a></li>
+      </ul>
+
+      <div class="nav-header center">
+        <h1>Create New Slideshow</h1>
+        <div class="tagline"><i class="fa ellipses-h"></i></div>
+      </div>
+    </div>
+
+    <!-- Fixed Masonry Filters -->
+    </nav>
+
+  </nav>
+  <ul class="side-nav" id="nav-mobile">
+    <li class="active"><a href="index.html"><i class="material-icons">camera</i>My Slideshows</a></li>
+    <li><a href="full-header.html"><i class="material-icons">fullscreen</i>My Account</a></li>
+    <li><a href="horizontal.html"><i class="material-icons">swap_horiz</i>Logout</a></li>
+  </ul>
+
+  <!-- End Navigation -->
+
+    <div id="portfolio" class="section gray fullpage">
+      <div class="container">
+        <br>
+
+          <div class="row">
+            <div class="input-field col s12 m12 l6 offset-l3">
+              <input placeholder="#thisisanexample" id="first_name2" type="text" class="validate">
+              <label class="active" for="first_name2">Choose your hashtag</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 m12 l6 offset-l3">
+              <input type="date" class="datepicker">
+              <label class="active" for="first_name2">Choose your starting date</label>
+            </div>
+          </div>
+
+          <div class="row button">
+            <div class="input-field col s12 m12 l6 offset-l3">
+              <div class="right">
+                <a class="waves-effect waves-light btn blue">Create New</a>
+              </div>
+            </div>
+          </div>
+      </div>
+   </div>
+
+   <script type="text/javascript">
+   	 $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+   </script>

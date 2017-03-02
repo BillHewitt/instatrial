@@ -202,14 +202,26 @@
         <div id="test2" class="col s12"><!-- Start Settings tab -->
 
         <br>
-
+        <div class="col l6 m6 s12">
           <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
           <li class="">
             <div class="collapsible-header"><i class="material-icons">mode_edit</i>Slideshow Design</div>
-            <div class="collapsible-body" style="display: none;"><span>
-              Choose which design you'd like to use on the slideshow
+            <div class="collapsible-body" style="display: none;">
 
-            </span></div>
+              <div class="input-field">
+                <select>
+                  <option value="" disabled selected>Choose your design</option>
+                  <option value="1">Design 1</option>
+                  <option value="2">Design 2</option>
+                  <option value="3">Design 3</option>
+                </select>
+                <label>Slideshow Design</label>
+              </div>
+
+
+
+
+            </div>
           </li>
           <li class="">
             <div class="collapsible-header"><i class="material-icons">computer</i>Display Options</div>
@@ -230,7 +242,7 @@
             </div>
           </div>
 
-
+          </div>
 
         </div><!-- End Settings tab -->
 
@@ -267,5 +279,9 @@
 
       $(document).ready(function(){
     $('.collapsible').collapsible();
+  });
+
+      $(document).ready(function() {
+    $('select').material_select();
   });
 </script>

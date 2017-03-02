@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def edit
   end
+
+  def login
+  end
 end

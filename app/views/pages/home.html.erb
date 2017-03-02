@@ -16,7 +16,7 @@
       <!-- Dropdown Structure -->
       <ul id='feature-dropdown' class='dropdown-content'>
         <li><%= link_to "My Account", pages_myaccount_path %></li>
-        <li><a href="horizontal.html">Logout</a></li>
+        <li><%= link_to "Logout", pages_login_path %></li>
       </ul>
 
       <div class="nav-header center">
@@ -52,7 +52,7 @@
         My Account
         <% end %>
     </li>
-    <li><%= link_to root_path, id: "logo" do %>
+    <li><%= link_to pages_login_path, id: "logo" do %>
         <i class="material-icons">settings_power</i>
         Logout
         <% end %>

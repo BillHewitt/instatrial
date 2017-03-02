@@ -15,7 +15,7 @@
       <!-- Dropdown Structure -->
       <ul id='feature-dropdown' class='dropdown-content'>
         <li><%= link_to "My Account", pages_myaccount_path %></li>
-        <li><a href="horizontal.html">Logout</a></li>
+        <li><%= link_to "Logout", pages_login_path %></li>
       </ul>
 
       <div class="nav-header center">
@@ -47,7 +47,7 @@
         My Account
         <% end %>
     </li>
-    <li><%= link_to root_path, id: "logo" do %>
+    <li><%= link_to pages_login_path, id: "logo" do %>
         <i class="material-icons">settings_power</i>
         Logout
         <% end %>
@@ -196,6 +196,7 @@
             <br>
             <br>
 
+</div>
 
 
         </div><!-- End Moderation tab -->
@@ -203,6 +204,7 @@
 
         <br>
         <div class="row">
+        <div class="container">
         <div class="col l8 m8 s12">
           <ul class="collapsible" data-collapsible="accordion">
           <li class="">
@@ -311,8 +313,9 @@
                   Yes
                 </label>
               </div>
-              </div>
             </div>
+            <br>
+            
 
             <div class="row">
               <div clas="col l6 m6 s12">
@@ -331,7 +334,7 @@
                   <label for="30" data-error="wrong" placeholder="30" data-success="right">Seconds</label>
                 </div>
               </div>
-            </div>
+          
 
 
 

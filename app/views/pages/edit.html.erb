@@ -202,12 +202,12 @@
         <div id="test2" class="col s12"><!-- Start Settings tab -->
 
         <br>
-        <div class="col l6 m6 s12">
+        <div class="row">
+        <div class="col l8 m8 s12">
           <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
           <li class="">
             <div class="collapsible-header"><i class="material-icons">mode_edit</i>Slideshow Design</div>
             <div class="collapsible-body" style="display: none;">
-
               <div class="input-field">
                 <select>
                   <option value="" disabled selected>Choose your design</option>
@@ -215,17 +215,60 @@
                   <option value="2">Design 2</option>
                   <option value="3">Design 3</option>
                 </select>
-                <label>Slideshow Design</label>
+                <label>Choose your slideshow design</label>
               </div>
-
+          </div>
+          </li>
+          <li class="">
+            <div class="collapsible-header"><i class="material-icons">computer</i>Slideshow Display Options</div>
+            <div class="collapsible-body" style="display: none;">
+              <div class="input-field">
+                <select>
+                  <option value="" disabled selected>Transition type</option>
+                  <option value="1">Fade In</option>
+                  <option value="2">Slide Down</option>
+                  <option value="3">Slide In From Right</option>
+                </select>
+                <label>Choose your transition type</label>
+              </div>
+              <div class="input-field">
+                <select>
+                  <option value="" disabled selected>Transition speed</option>
+                  <option value="1">Very Fast</option>
+                  <option value="2">Fast</option>
+                  <option value="3">Medium</option>
+                  <option value="3">Slow</option>
+                  <option value="3">Very Slow</option>
+                </select>
+                <label>Choose your transition speed</label>
+              </div>
+              <form action="#">
+                <p>
+                  <input type="checkbox" id="test10" checked="checked" />
+                  <label for="test10">Display Photos</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="test6" checked="checked" />
+                  <label for="test6">Display Videos</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="test7" checked="checked" />
+                  <label for="test7">Display User Avatars</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="test8" checked="checked"/>
+                  <label for="test8">Display Captions</label>
+                </p>
+                <p>
+                  <input type="checkbox" id="test5" />
+                  <label for="test5">Display Hashtags #</label>
+                </p>
+                
+              </form>
 
 
 
             </div>
-          </li>
-          <li class="">
-            <div class="collapsible-header"><i class="material-icons">computer</i>Display Options</div>
-            <div class="collapsible-body" style="display: none;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">info_outline</i>Information Message</div>
@@ -240,6 +283,8 @@
                 <a class="waves-effect waves-light btn blue">Save</a>
               </div>
             </div>
+          </div>
+
           </div>
 
           </div>

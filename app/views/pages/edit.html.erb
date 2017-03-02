@@ -61,7 +61,7 @@
    <div id="portfolio" class="section gray fullpage">
       <div class="container">
 
-        <div id="test1" class="col s12"><!-- Start Profile tab -->
+        <div id="test1" class="col s12"><!-- Start Moderation tab -->
           <br>
 
             <div class="row">
@@ -198,43 +198,29 @@
 
 
 
-        </div><!-- End Profile tab -->
-        <div id="test2" class="col s12"><!-- Start Password tab -->
+        </div><!-- End Moderation tab -->
+        <div id="test2" class="col s12"><!-- Start Settings tab -->
 
         <br>
 
-          <div class="row">
-            <div class="input-field col s12 m12 l6">
-              <input value="************" id="first_name2" type="text" class="validate">
-              <label class="active" for="first_name2">Current Password</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12 m12 l6">
-              <input placeholder="" ="New Password" id="first_name2" type="text" class="validate">
-              <label class="active" for="first_name2">New Password</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12 m12 l6">
-              <input placeholder="" ="Repeat New Password" id="first_name2" type="text" class="validate">
-              <label class="active" for="first_name2">Repeat New Password</label>
-            </div>
-          </div>
-
-          <div class="row button">
-            <div class="input-field col s12 m12 l6">
-              <div class="right">
-                <a class="waves-effect waves-light btn blue">Save</a>
-              </div>
-            </div>
-          </div>
+          <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+          <li class="">
+            <div class="collapsible-header"><i class="material-icons">mode_edit</i>Slideshow Design</div>
+            <div class="collapsible-body" style="display: none;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+          </li>
+          <li class="">
+            <div class="collapsible-header"><i class="material-icons">computer</i>Display Options</div>
+            <div class="collapsible-body" style="display: none;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">info_outline</i>Information Message</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+          </li>
+        </ul>
 
 
 
-        </div><!-- End Password tab -->
+        </div><!-- End Settings tab -->
 
 
           <div class="fixed-action-btn click-to-toggle">
@@ -244,7 +230,7 @@
             <ul>
               <li><a class="btn-floating tooltipped green" data-position="left" data-delay="50" data-tooltip="Approve All Posts"><i class="material-icons">done</i></a></li>
               <li><a class="btn-floating tooltipped red" data-position="left" data-delay="50" data-tooltip="Hide All Posts"><i class="material-icons">visibility_off</i></a></li>
-              <li><a class="btn-floating tooltipped yellow" data-position="left" data-delay="50" data-tooltip="Download All Posts"><i class="material-icons""><i class="material-icons">perm_media</i></a></li>
+              <li><a class="btn-floating tooltipped yellow" data-position="left" data-delay="50" data-tooltip="Download All Posts"><i class="material-icons""><i class="material-icons">file_download</i></a></li>
               <li><a class="btn-floating tooltipped grey darken-2" data-position="left" data-delay="50" data-tooltip="Launch Slideshow"><i class="material-icons""><i class="material-icons">launch</i></a></li>
             </ul>
           </div>
@@ -265,5 +251,9 @@
 
       $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
+  });
+
+      $(document).ready(function(){
+    $('.collapsible').collapsible();
   });
 </script>

@@ -204,24 +204,35 @@
         <br>
         <div class="row">
         <div class="col l8 m8 s12">
-          <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+          <ul class="collapsible" data-collapsible="expandable">
           <li class="">
             <div class="collapsible-header"><i class="material-icons">mode_edit</i>Slideshow Design</div>
             <div class="collapsible-body" style="display: none;">
+
+            <div class="row">
+              <div clas="col l6 m6 s12">
               <div class="input-field">
-                <select>
+                <select class="icons">
                   <option value="" disabled selected>Choose your design</option>
-                  <option value="1">Design 1</option>
-                  <option value="2">Design 2</option>
-                  <option value="3">Design 3</option>
+                  <option value="" data-icon="http://placehold.it/400x300" class="circle">Design 1</option>
+                  <option value="" data-icon="http://placehold.it/400x300" class="circle">Design 2</option>
+                  <option value="" data-icon="http://placehold.it/400x300" class="circle">Design 3</option>
                 </select>
-                <label>Choose your slideshow design</label>
+                <label>Slideshow Design</label>
               </div>
+              </div>
+            </div>
+
+
           </div>
           </li>
           <li class="">
-            <div class="collapsible-header"><i class="material-icons">computer</i>Display Options</div>
+            <div class="collapsible-header"><i class="material-icons">computer</i>Slideshow Display Options</div>
             <div class="collapsible-body" style="display: none;">
+              
+
+            <div class="row">
+              <div clas="col l6 m6 s12">
               <div class="input-field">
                 <select>
                   <option value="" disabled selected>Transition type</option>
@@ -231,6 +242,13 @@
                 </select>
                 <label>Choose your transition type</label>
               </div>
+              </div>
+            </div>
+
+
+
+          <div class="row">
+              <div clas="col l6 m6 s12">
               <div class="input-field">
                 <select>
                   <option value="" disabled selected>Transition speed</option>
@@ -242,6 +260,12 @@
                 </select>
                 <label>Choose your transition speed</label>
               </div>
+            </div>
+          </div>
+
+          <div class="row">
+              <div clas="col l6 m6 s12">
+
               <form action="#">
                 <p>
                   <input type="checkbox" id="test10" checked="checked" />
@@ -265,18 +289,71 @@
                 </p>
                 
               </form>
+          </div>
+          </div>
 
 
 
             </div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">info_outline</i>Information Message</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+            <div class="collapsible-header"><i class="material-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="This information message will appear on the final slideshow at regular intervals, so people at the event know how to contribute their posts to the slideshow."">info_outline</i>Slideshow Information Message</div>
+            <div class="collapsible-body">
+
+            <div class="row">
+              <div clas="col l6 m6 s12">
+              <p class="mute">Display information message?</p>
+              <div class="switch">
+                <label>
+                  No
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  Yes
+                </label>
+              </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div clas="col l6 m6 s12">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea" data-length="50"></textarea>
+                  <label for="textarea1">Choose your information message</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12">
+                Message interval:
+                <div class="input-field inline">
+                  <input id="email" type="email" class="validate">
+                  <label for="30" data-error="wrong" placeholder="30" data-success="right">Seconds</label>
+                </div>
+              </div>
+            </div>
+
+
+
+            </div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">settings</i>Approval Settings</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
+            <div class="collapsible-header"><i class="material-icons">settings</i>Moderation Settings</div>
+            <div class="collapsible-body"><span>Stop all incoming posts (photos and videos) from automatically appearing on the slideshow. By selecting 'Yes', you will need to manually approve all new posts before they are visible on the slideshow.<br></span>
+
+              <!-- Switch -->
+  <div class="switch">
+  <br>
+    <label>
+      No
+      <input type="checkbox">
+      <span class="lever active"></span>
+      Yes
+    </label>
+  </div>
+
+
+            </div>
           </li>
         </ul>
         <br>

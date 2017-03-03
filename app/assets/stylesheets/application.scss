@@ -12,6 +12,12 @@ div.picker__date-display {
   @extend .blue;
 }
 
+p.subtext {
+  font-color: #bcbcbc;
+  font-size: 12px;
+}
+
+
 p.mute {
   color:#9e9e9e;
 }
@@ -27,6 +33,7 @@ div.picker__weekday-display {
 img.brand-logo {
   padding-top: 20px;
 }
+
 
 
 .dropdown-content li > a, .dropdown-content li > span {

@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def login
   end
+
+  def show
+  end
 end

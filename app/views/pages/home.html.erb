@@ -73,17 +73,16 @@
                   <div class="col s12 m6 l4">
                     <div class="card">
                       <div class="card-image">
-                        <img class="responsive-img activator" src="http://placehold.it/400x300" alt="placeholder">
+                      <%= link_to pages_edit_path do %>
+        <%= image_tag "http://placehold.it/400x300", class: "responsive-img activator" %>
+      <% end %>
+                        
                         <a class="btn-floating btn-large btn tooltipped halfway-fab waves-effect waves-light grey darken-2" data-position="top" data-delay="50" data-tooltip="Launch Slideshow"><i class="material-icons">launch</i></a>
 
                       </div>
                       <div class="card-content">
-                        <span class="card-title">#GIGGSHOUR</span>
+                        <%= link_to "#GIGGSHOUR", pages_edit_path, class: "card-title" %>
                         <p>142 posts since Feb 27, 2017</p>
-                      </div>
-                      <div class="card-action">
-                        <%= link_to "Edit Slideshow", pages_edit_path, class: "blue-text text-blue" %>
-                        <a class="grey-text text-grey" href="#modal1">Delete</a>
                       </div>
                     </div><!-- End Card -->
                   </div><!-- End Col -->
@@ -96,12 +95,8 @@
                         <a class="btn-floating btn-large btn tooltipped halfway-fab waves-effect waves-light grey darken-2" data-position="top" data-delay="50" data-tooltip="Launch Slideshow"><i class="material-icons">launch</i></a>
                       </div>
                       <div class="card-content">
-                        <span class="card-title">#UELMEMORIES</span>
+                        <%= link_to "#UELMEMORIES", pages_edit_path, class: "card-title" %>
                         <p>142 posts since Feb 27, 2017</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#" class="blue-text text-blue">Edit Slideshow</a>
-                        <a class="grey-text text-grey" href="#modal2">Delete</a>
                       </div>
                     </div><!-- End Card -->
                   </div><!-- End Col -->
